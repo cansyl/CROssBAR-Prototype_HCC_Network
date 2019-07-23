@@ -40,3 +40,6 @@ The prototype network model was created in 7 main steps:
 
 - 61 HCC related genes in total
 
+
+## How to load the network on CytoScape:
+
