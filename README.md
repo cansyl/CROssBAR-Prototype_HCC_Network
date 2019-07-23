@@ -134,7 +134,7 @@ The prototype network model was created in 7 main steps:
 
 - 26 interactions between 10 pathways and 5 diseases
 
-<img src="https://user-images.githubusercontent.com/8128032/61719409-840d1080-ad6d-11e9-99a0-86f8ea116ad7.png" width="750">
+<img src="https://user-images.githubusercontent.com/8128032/61731119-7793b280-ad83-11e9-9a78-0907f525c31b.png" width="650">
 
 **7. The determination of associations between genes and HPO terms:**
 
