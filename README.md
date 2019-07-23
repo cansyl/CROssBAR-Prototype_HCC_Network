@@ -14,13 +14,15 @@ The aim of the CROssBAR project is to develop a large-scale open access system t
 
 **5) Construction of an open access web-service**, where it will be possible to browse with an entity of interest to observe the related network with its components
 
+![alt text](https://github.com/cansyl/CROssBAR-Networks/blob/master/CROssBAR-Overview.png)
+
 Repository for item # 2: https://github.com/cansyl/DEEPScreen
 
 ## Prototype: Hepatocellular Carcinoma Network
 
 We constructed a prototype network using CROssBAR integrated data resources and by setting multiple enrichment based filters to include only the most relevant biomedical entities. Later, this workflow will be automatized to generate similar networks and visualize them on the fly using CytoScape browser plug-in, through the CROssBAR web-service.
 
-Below network will be displayed to the web-service user following the search with the term: “hepatocellular carcinoma”
+Below network will be displayed to the web-service user following a web-service search with the term: “hepatocellular carcinoma”
 
 **Workflow for the construction of the network:**
 
