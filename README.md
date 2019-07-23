@@ -180,7 +180,7 @@ The prototype network model was created in 7 main steps:
 
 ![HCC_Network](https://user-images.githubusercontent.com/13165170/61747325-e7169b80-ad9d-11e9-9617-224fc7378f6c.png)
 
-<img src="https://user-images.githubusercontent.com/13165170/61747367-00b7e300-ad9e-11e9-85e4-19c0c907e4e6.png" width="300">
+<img src="https://user-images.githubusercontent.com/13165170/61747367-00b7e300-ad9e-11e9-85e4-19c0c907e4e6.png" width="500">
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -190,9 +190,7 @@ The prototype network model was created in 7 main steps:
 
 To load the Hepatocellular Carcinoma Prototype Network on CytoScape;
 
-- You can directly open the session file (Hepatocellular Carcinoma Network.cys) via CytoScape application  
-
-  or (if it does not work),
+- You can directly open the session file (Hepatocellular Carcinoma Network.cys) via CytoScape application or (if it does not work):
 
 - You can open a new session on CytoScape and import the network file (Hepatocellular Carcinoma Network.xgmml) as File -> Import -> Network -> File 
 
