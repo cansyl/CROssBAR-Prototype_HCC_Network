@@ -180,7 +180,7 @@ The prototype network model was created in 7 main steps:
 
 ![HCC_Network](https://user-images.githubusercontent.com/13165170/61747325-e7169b80-ad9d-11e9-9617-224fc7378f6c.png)
 
-
+<img src="https://user-images.githubusercontent.com/13165170/61747367-00b7e300-ad9e-11e9-85e4-19c0c907e4e6.png" width="300">
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
