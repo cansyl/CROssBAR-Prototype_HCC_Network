@@ -65,7 +65,7 @@ The prototype network model was created in 7 main steps:
 
 - Edge color: Green   
 
-- Node color: Red
+- Node color: Red (approved and investigational drugs)
 
 ![image](https://user-images.githubusercontent.com/8128032/61719015-ca15a480-ad6c-11e9-9c05-031d449f6d5c.png)
 
@@ -76,7 +76,7 @@ The prototype network model was created in 7 main steps:
 
 - Compounds with pXC50 >= 5.0 were labelled as active.
 
-- For each compound, enrichment score was calculated based on ratios of active & inactive datapoint numbers of compounds in HCC genes and in total ExCAPE gene set.
+- For each compound, enrichment score was calculated with hypergeometric test, based on ratios of active & inactive datapoints of compounds for HCC network genes and in the overall ExCAPE dataset (ChEMBL+PubChem) targets.
 
 - Only compounds with enrichment score > 1 were considered
 
@@ -86,7 +86,7 @@ The prototype network model was created in 7 main steps:
 
 - Edge color: Blue   
 
-- Node color: Orange (if not a drug) 
+- Node color: Orange (drug-like compounds) 
 
 ![image](https://user-images.githubusercontent.com/8128032/61719047-dbf74780-ad6c-11e9-86b0-a871eeac768c.png)
 
@@ -97,7 +97,7 @@ The prototype network model was created in 7 main steps:
 
 - Predicted interactions were retrieved from DEEPSreen predictions 
 
-- For each compound, enrichment score was calculated based on ratios of active & inactive datapoint numbers of compounds in HCC genes and in total ExCAPE gene set.
+- For each compound, enrichment score was calculated with hypergeometric test, based on ratios of active & inactive datapoints of compounds for HCC network genes and in the overall ExCAPE dataset (ChEMBL+PubChem) targets.
 
 - Only compounds with enrichment score > 1 were considered
 
@@ -163,7 +163,7 @@ The prototype network model was created in 7 main steps:
 
 - HPO terms were retrieved from Human Phenotype Ontology database (https://hpo.jax.org/app/)
 
-- For each HPO term, enrichment score and p-value was calculated based on ratios of HPO terms in HCC genes and in total ExCAPE gene set
+- For each HPO term, enrichment score and p-value were calculated with hypergeometric test, based on ratios of active & inactive datapoints of HPO terms for HCC network genes and in the overall ExCAPE dataset (ChEMBL+PubChem) targets.
 
 - Only HPO terms with enrichment score > 65 and p-value < 10^-5 were considered
 
@@ -176,7 +176,7 @@ The prototype network model was created in 7 main steps:
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-**- The prototype network below includes 178 nodes (i.e., genes, compounds, pathways, KEGG diseases, HPO terms) and 443 edges (i.e., interactions between nodes) in total.**
+**The finalized prototype network includes 178 nodes (i.e., genes, compounds, pathways, KEGG diseases, HPO terms) and 443 edges (i.e., interactions) in total.**
 
 ![image](https://user-images.githubusercontent.com/8128032/61729585-38179700-ad80-11e9-90d2-b09c5cbdf4eb.png)
 
