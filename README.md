@@ -10,7 +10,7 @@ The aim of the CROssBAR project is to develop a large-scale open access system t
 
 **2) Large-scale prediction of unknown drug-target interactions** (as well as non-interactions), by developing and applying a deep learning based ML method
 
-**3) Generation of multi-partite biomedical networks**, where nodes will represent compounds/drugs, genes/proteins, pathways and diseases, and the edges will represent the known and predicted pairwise relations
+**3) Generation of the biomedical networks**, where nodes will represent compounds/drugs, genes/proteins, pathways and diseases, and the edges will represent the known and predicted pairwise relations
 
 **4) Biological evaluation (experimental validation)** of the selected results on PI3K/AKT/mTOR pathway, in terms of liver cancer mechanisms
 
