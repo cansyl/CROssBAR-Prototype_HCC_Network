@@ -178,7 +178,9 @@ The prototype network model was created in 7 main steps:
 
 **The finalized prototype network includes 178 nodes (i.e., genes, compounds, pathways, KEGG diseases, HPO terms) and 443 edges (i.e., interactions) in total.**
 
-![image](https://user-images.githubusercontent.com/8128032/61729585-38179700-ad80-11e9-90d2-b09c5cbdf4eb.png)
+![HCC_Network](https://user-images.githubusercontent.com/13165170/61747325-e7169b80-ad9d-11e9-9617-224fc7378f6c.png)
+
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
