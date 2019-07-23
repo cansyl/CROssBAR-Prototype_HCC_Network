@@ -2,7 +2,7 @@
 
 The aim of the CROssBAR project is to develop a large-scale open access system to annotate complex relations between drugs/compounds, target biomolecules, pathways and diseases, via biological data integration and artificial learning based relation prediction.
 
-**Sub-project under CROssBAR:**
+**Sub-projects under CROssBAR:**
 
 **1) Construction of the CROssBAR database** by integrating biological data from various resources
 
@@ -23,4 +23,18 @@ We constructed a prototype network using CROssBAR integrated data resources and 
 Below network will be displayed to the web-service user following the search with the term: “hepatocellular carcinoma”
 
 **Workflow for the construction of the network:**
+
+The prototype network model was created in 7 main steps:
+
+**1. The selection of HCC related genes:**
+
+- KEGG (H00048): 20 genes
+
+- OMIM (Phenotype MIM 114550): 9 genes
+
+- OpenTargets (EFO_0000182): 18 genes (with score > 0.2 «genetic associations» )
+
+- TCGA_HCC: 34 genes (expert knowledge)
+
+- 61 HCC related genes in total
 
