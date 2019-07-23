@@ -134,7 +134,7 @@ The prototype network model was created in 7 main steps:
 
 - 26 interactions between 10 pathways and 5 diseases
 
-![image](https://user-images.githubusercontent.com/8128032/61719409-840d1080-ad6d-11e9-99a0-86f8ea116ad7.png)
+<img src="https://user-images.githubusercontent.com/8128032/61719409-840d1080-ad6d-11e9-99a0-86f8ea116ad7.png" width="750">
 
 **7. The determination of associations between genes and HPO terms:**
 
@@ -148,20 +148,13 @@ The prototype network model was created in 7 main steps:
 
 - 120 interactions between 22 genes and 10 HPO terms
 
-![image](https://user-images.githubusercontent.com/8128032/61719445-99823a80-ad6d-11e9-845a-9e7eba619146.png)
+<img src="https://user-images.githubusercontent.com/8128032/61719445-99823a80-ad6d-11e9-845a-9e7eba619146.png" width="600">
+
 
 
 **- The prototype network below includes 178 nodes (i.e., genes, compounds, pathways, KEGG diseases, HPO terms) and 443 edges (i.e., interactions between nodes) in total.**
 
-![image](https://user-images.githubusercontent.com/8128032/61719670-08f82a00-ad6e-11e9-91ab-8e882ebcb905.png)
-
-
-
-
-
-
-
-
+![image](https://user-images.githubusercontent.com/8128032/61729585-38179700-ad80-11e9-90d2-b09c5cbdf4eb.png)
 
 
 
