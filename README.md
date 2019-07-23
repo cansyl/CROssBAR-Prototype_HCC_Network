@@ -40,6 +40,143 @@ The prototype network model was created in 7 main steps:
 
 - 61 HCC related genes in total
 
+<img src="https://user-images.githubusercontent.com/8128032/61721044-86bd3500-ad70-11e9-9df0-50c7bc51a329.png" width="500">
+
+**2. The determination of protein-protein interactions (PPIs):** 
+
+- STRING application on CytoScape 
+
+- PPIs with a confidence score >= 0.95
+
+- 45 PPIs between 31 proteins
+
+![image](https://user-images.githubusercontent.com/8128032/61718989-b702d480-ad6c-11e9-849b-0245642cca10.png)
+
+**3. The selection of compounds interacting with HCC related genes:**
+
+**a. Known interactions from DrugBank** 
+
+- 63 interactions between 21 genes and 57 compounds 
+
+- Edge color: Green   
+
+- Node color: Red
+
+![image](https://user-images.githubusercontent.com/8128032/61719015-ca15a480-ad6c-11e9-9c05-031d449f6d5c.png)
+
+**b. Experimentally measured interactions from PubChem + ChEMBL (ExCAPE dataset)**
+
+- Compounds with pXC50 >= 5.0 were labelled as active.
+
+- For each compound, enrichment score was calculated based on ratios of active & inactive datapoint numbers of compounds in HCC genes and in total ExCAPE gene set.
+
+- Only compounds with enrichment score > 1 were considered
+
+- Top 5 compounds, which are not similar to each other, were selected based on enrichment scores 
+
+- 26 interactions between 11 genes and 12 compounds
+
+- Edge color: Blue   
+
+- Node color: Orange (if not a drug) 
+
+![image](https://user-images.githubusercontent.com/8128032/61719047-dbf74780-ad6c-11e9-86b0-a871eeac768c.png)
+
+**c. Predicted interactions from DEEPScreen**
+
+- Predicted interactions were retrieved from DEEPSreen predictions 
+
+- For each compound, enrichment score was calculated based on ratios of active & inactive datapoint numbers of compounds in HCC genes and in total ExCAPE gene set.
+
+- Only compounds with enrichment score > 1 were considered
+
+- Top 5 compounds, which are not similar to each other, were selected based on enrichment scores 
+
+- 25 interactions between 5 genes and 23 compounds 
+
+- Edge color: Red   
+
+- Node color: Orange (if not a drug) 
+
+![image](https://user-images.githubusercontent.com/8128032/61719081-ec0f2700-ad6c-11e9-98e9-de9050fd71d5.png)
+
+**4. The determination of HCC related pathways and their gene associations:** 
+
+- Signaling pathways associated with HCC disease pathway (hsa05225) in KEGG
+
+- STRING enrichment application on CytoScape 
+  - FDR cutoff = 0.05
+  - KEGG signaling pathways >= 5 enriched genes
+     
+<img src="https://user-images.githubusercontent.com/8128032/61722515-19f76a00-ad73-11e9-80f9-fab13384c512.png" width="600">
+
+- 66 interactions between 22 genes and 10 pathways 
+
+![image](https://user-images.githubusercontent.com/8128032/61719251-40b2a200-ad6d-11e9-982b-89bd90f87011.png)
+
+**5. The determination of other diseases associated with HCC related genes:** 
+
+- Associations between these genes and other diseases
+
+- STRING enrichment application on CytoScape 
+  - FDR cutoff = 0.05
+  - KEGG diseases >= 10 enriched genes
+
+<img src="https://user-images.githubusercontent.com/8128032/61721937-0dbedd00-ad72-11e9-8cba-61602a5c8049.png" width="600">
+
+- 72 interactions between 27 genes and 5 diseases
+
+![image](https://user-images.githubusercontent.com/8128032/61719376-735c9a80-ad6d-11e9-98b0-ec39f750218a.png)
+
+**6. The determination of associations between pathways and diseases:** 
+
+- Retrieved from KEGG pathways of the network diseases
+
+- 26 interactions between 10 pathways and 5 diseases
+
+![image](https://user-images.githubusercontent.com/8128032/61719409-840d1080-ad6d-11e9-99a0-86f8ea116ad7.png)
+
+**7. The determination of associations between genes and HPO terms:**
+
+- HPO terms were retrieved from Human Phenotype Ontology database (https://hpo.jax.org/app/)
+
+- For each HPO term, enrichment score and p-value was calculated based on ratios of HPO terms in HCC genes and in total ExCAPE gene set
+
+- Only HPO terms with enrichment score > 65 and p-value < 10^-5 were considered
+
+- Top 10 HPO terms, which have not parent-child relationship with each other, were selected and associated with related genes
+
+- 120 interactions between 22 genes and 10 HPO terms
+
+![image](https://user-images.githubusercontent.com/8128032/61719445-99823a80-ad6d-11e9-845a-9e7eba619146.png)
+
+
+**- The prototype network below includes 178 nodes (i.e., genes, compounds, pathways, KEGG diseases, HPO terms) and 443 edges (i.e., interactions between nodes) in total.**
+
+![image](https://user-images.githubusercontent.com/8128032/61719670-08f82a00-ad6e-11e9-91ab-8e882ebcb905.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## How to load the network on CytoScape:
+
+To load the Hepatocellular Carcinoma Prototype Network on CytoScape;
+
+- You can directly open the session file (Hepatocellular Carcinoma Network.cys) via CytoScape application  
+
+  or (if it does not work),
+
+- You can open a new session on CytoScape and import the network file (Hepatocellular Carcinoma Network.xgmml) as File -> Import -> Network -> File 
 
