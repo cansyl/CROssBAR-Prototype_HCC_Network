@@ -42,6 +42,9 @@ The prototype network model was created in 7 main steps:
 
 <img src="https://user-images.githubusercontent.com/8128032/61721044-86bd3500-ad70-11e9-9df0-50c7bc51a329.png" width="500">
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
 **2. The determination of protein-protein interactions (PPIs):** 
 
 - STRING application on CytoScape 
@@ -52,9 +55,11 @@ The prototype network model was created in 7 main steps:
 
 ![image](https://user-images.githubusercontent.com/8128032/61718989-b702d480-ad6c-11e9-849b-0245642cca10.png)
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
 **3. The selection of compounds interacting with HCC related genes:**
 
-**a. Known interactions from DrugBank** 
+**3a. Known interactions from DrugBank** 
 
 - 63 interactions between 21 genes and 57 compounds 
 
@@ -64,7 +69,10 @@ The prototype network model was created in 7 main steps:
 
 ![image](https://user-images.githubusercontent.com/8128032/61719015-ca15a480-ad6c-11e9-9c05-031d449f6d5c.png)
 
-**b. Experimentally measured interactions from PubChem + ChEMBL (ExCAPE dataset)**
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+**3b. Experimentally measured interactions from PubChem + ChEMBL (ExCAPE dataset)**
 
 - Compounds with pXC50 >= 5.0 were labelled as active.
 
@@ -82,7 +90,10 @@ The prototype network model was created in 7 main steps:
 
 ![image](https://user-images.githubusercontent.com/8128032/61719047-dbf74780-ad6c-11e9-86b0-a871eeac768c.png)
 
-**c. Predicted interactions from DEEPScreen**
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+**3c. Predicted interactions from DEEPScreen**
 
 - Predicted interactions were retrieved from DEEPSreen predictions 
 
@@ -100,6 +111,9 @@ The prototype network model was created in 7 main steps:
 
 ![image](https://user-images.githubusercontent.com/8128032/61719081-ec0f2700-ad6c-11e9-98e9-de9050fd71d5.png)
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
 **4. The determination of HCC related pathways and their gene associations:** 
 
 - Signaling pathways associated with HCC disease pathway (hsa05225) in KEGG
@@ -113,6 +127,9 @@ The prototype network model was created in 7 main steps:
 - 66 interactions between 22 genes and 10 pathways 
 
 ![image](https://user-images.githubusercontent.com/8128032/61719251-40b2a200-ad6d-11e9-982b-89bd90f87011.png)
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
 
 **5. The determination of other diseases associated with HCC related genes:** 
 
@@ -128,6 +145,9 @@ The prototype network model was created in 7 main steps:
 
 ![image](https://user-images.githubusercontent.com/8128032/61719376-735c9a80-ad6d-11e9-98b0-ec39f750218a.png)
 
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
 **6. The determination of associations between pathways and diseases:** 
 
 - Retrieved from KEGG pathways of the network diseases
@@ -135,6 +155,9 @@ The prototype network model was created in 7 main steps:
 - 26 interactions between 10 pathways and 5 diseases
 
 <img src="https://user-images.githubusercontent.com/8128032/61731119-7793b280-ad83-11e9-9a78-0907f525c31b.png" width="650">
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
 
 **7. The determination of associations between genes and HPO terms:**
 
@@ -150,16 +173,14 @@ The prototype network model was created in 7 main steps:
 
 <img src="https://user-images.githubusercontent.com/8128032/61719445-99823a80-ad6d-11e9-845a-9e7eba619146.png" width="600">
 
+---------------------------------------------------------------------------------------------------------------------------------------
 
 
 **- The prototype network below includes 178 nodes (i.e., genes, compounds, pathways, KEGG diseases, HPO terms) and 443 edges (i.e., interactions between nodes) in total.**
 
 ![image](https://user-images.githubusercontent.com/8128032/61729585-38179700-ad80-11e9-90d2-b09c5cbdf4eb.png)
 
-
-
-
-
+---------------------------------------------------------------------------------------------------------------------------------------
 
 
 
