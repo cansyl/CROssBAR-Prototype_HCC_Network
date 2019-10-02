@@ -97,7 +97,7 @@ The prototype network model was created in 7 main steps:
 
 - Predicted interactions were retrieved from DEEPSreen predictions 
 
-- For each compound, enrichment score was calculated with hypergeometric test, based on ratios of active & inactive datapoints of compounds for HCC network genes and in the overall ExCAPE dataset (ChEMBL+PubChem) targets.
+- For each compound, enrichment score was calculated with hypergeometric test, based on ratios of active & inactive datapoints of compounds for HCC network genes and in the overall DEEPScreen targets.
 
 - Only compounds with enrichment score > 1 were considered
 
@@ -135,6 +135,8 @@ The prototype network model was created in 7 main steps:
 
 - Associations between these genes and other diseases
 
+**5a. KEGG Disease Terms**
+
 - STRING enrichment application on CytoScape 
   - FDR cutoff = 0.05
   - KEGG diseases >= 10 enriched genes
@@ -143,7 +145,21 @@ The prototype network model was created in 7 main steps:
 
 - 72 interactions between 27 genes and 5 diseases
 
-![image](https://user-images.githubusercontent.com/8128032/61719376-735c9a80-ad6d-11e9-98b0-ec39f750218a.png)
+![image](https://user-images.githubusercontent.com/8128032/66081772-68926300-e571-11e9-80d6-623297aa43da.png)
+
+**5b. EFO Disease Terms** 
+
+- EFO disease terms were retrieved from GWAS (Genome-Wide Association Studies) Catalog (https://www.ebi.ac.uk/gwas/docs/file-downloads). 
+
+- For each EFO term, enrichment score and p-value was calculated based on ratios of EFO terms in HCC genes and in the overall GWAS gene set.
+
+- Only EFO terms with enrichment score > 20 and p-value < 0.005 were considered.
+
+- EFO terms belonging to "disease" root were selected and associated with related genes.
+
+- 35 interactions between 20 genes and 7 EFO disease terms
+
+![image](https://user-images.githubusercontent.com/8128032/66081718-3f71d280-e571-11e9-813e-6288a508d06c.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -154,7 +170,7 @@ The prototype network model was created in 7 main steps:
 
 - 26 interactions between 10 pathways and 5 diseases
 
-<img src="https://user-images.githubusercontent.com/8128032/61731119-7793b280-ad83-11e9-9a78-0907f525c31b.png" width="650">
+![image](https://user-images.githubusercontent.com/8128032/66081837-8b247c00-e571-11e9-867b-8ca2d066d34a.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------
 
@@ -163,7 +179,7 @@ The prototype network model was created in 7 main steps:
 
 - HPO terms were retrieved from Human Phenotype Ontology database (https://hpo.jax.org/app/)
 
-- For each HPO term, enrichment score and p-value were calculated with hypergeometric test, based on ratios of active & inactive datapoints of HPO terms for HCC network genes and in the overall ExCAPE dataset (ChEMBL+PubChem) targets.
+- For each HPO term, enrichment score and p-value were calculated with hypergeometric test, based on ratios of active & inactive datapoints of HPO terms for HCC network genes and in the overall HPO targets.
 
 - Only HPO terms with enrichment score > 65 and p-value < 10^-5 were considered
 
@@ -176,9 +192,9 @@ The prototype network model was created in 7 main steps:
 ---------------------------------------------------------------------------------------------------------------------------------------
 
 
-**The finalized prototype network includes 178 nodes (i.e., genes, compounds, pathways, KEGG diseases, HPO terms) and 443 edges (i.e., interactions) in total.**
+**The finalized prototype network includes 185 nodes (i.e., genes, compounds, pathways, KEGG and EFO diseases, HPO terms) and 478 edges (i.e., interactions) in total.**
 
-![HCC_Network](https://user-images.githubusercontent.com/13165170/61747325-e7169b80-ad9d-11e9-9617-224fc7378f6c.png)
+![image](https://user-images.githubusercontent.com/8128032/66083489-15baaa80-e575-11e9-8c6a-231fe02e9cb8.png)
 
 <img src="https://user-images.githubusercontent.com/13165170/61747367-00b7e300-ad9e-11e9-85e4-19c0c907e4e6.png" width="500">
 
@@ -190,7 +206,7 @@ The prototype network model was created in 7 main steps:
 
 To load the Hepatocellular Carcinoma Prototype Network on CytoScape;
 
-- You may directly open the session file (Hepatocellular Carcinoma Network.cys) via CytoScape application or (if it does not work):
+- You may directly open the session file (Hepatocellular_Carcinoma_Network.cys) via CytoScape application or (if it does not work):
 
-- You may open a new session on CytoScape and import the network file (Hepatocellular Carcinoma Network.xgmml) as File -> Import -> Network -> File 
+- You may open a new session on CytoScape and import the network file (Hepatocellular_Carcinoma_Network.xgmml) as File -> Import -> Network -> File 
 
